@@ -1,0 +1,16 @@
+from functools import reduce
+
+nums = [1, 2, 3, 4, 5]
+
+# step 1: multiply by 2
+mapped = list(map(lambda x: x * 2, nums))
+
+# step 2: keep even numbers
+filtered = list(filter(lambda x: x % 2 == 0, mapped))
+
+# step 3: sum all
+result = reduce(lambda x, y: x + y, filtered)
+
+print(mapped)
+print(filtered)
+print(result)
