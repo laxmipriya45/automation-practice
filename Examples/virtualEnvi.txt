@@ -1,0 +1,29 @@
+A virtual environment is an isolated space where you can install Python packages separately for each project.
+
+🔹 Simple definition
+
+.It allows you to manage dependencies without affecting other projects
+
+🔹 Why we use it
+✔ Avoid version conflicts
+✔ Keep projects independent
+✔ Clean and organized setup
+🔹 Example
+
+ Project A needs numpy version 1.x
+ Project B needs numpy version 2.x
+
+Without virtual environment --> conflict
+With virtual environment -->> no issue
+
+🔹 How to create
+python -m venv myenv
+🔹 Activate environment
+Windows:
+myenv\Scripts\activate
+Mac/Linux:
+source myenv/bin/activate
+🔹 Install packages
+pip install numpy
+🔹 Deactivate
+deactivate
