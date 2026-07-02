@@ -25,3 +25,11 @@ i = 1
 while i <= 5:
     print(i)
     i += 1
+
+
+
+x = 7
+if x % 2 == 0:
+    print("even")
+else:
+    print("odd")

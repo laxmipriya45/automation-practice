@@ -1,19 +1,19 @@
-# s=open("p.txt","w")  #write
-# s.write("hello")
+s=open("p.txt","w")  #write
+s.write("hello")
 
-# s=open("p.txt","r")     #read
-# print(s.read())
+s=open("p.txt","r")     #read
+print(s.read())
 
 
-# s=open("p.txt","a")
-# s.write("ok ok ")
+s=open("p.txt","a") #append
+s.write("ok ok ")
 
-# import csv
-# with open("p.csv","w", newline="") as f:
-#     s=csv.writer(f)
-#     s.writerow(["Names","address"])
-#     s.writerow(["kajal","bombay"])
-#     s.writerow(["Tammanah","Gujarat"])
+import csv
+with open("p.csv","w", newline="") as f:
+    s=csv.writer(f)
+    s.writerow(["Names","address"])
+    s.writerow(["kajal","bombay"])
+    s.writerow(["Tammanah","Gujarat"])
 
 import csv
 with open("p.csv","r") as f:
@@ -45,3 +45,6 @@ with open("d1.json","r") as f:
 # with open("d1.json","r") as f:
 #     s=json.load(f)
 #     print(s)
+
+
+
